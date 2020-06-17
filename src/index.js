@@ -28,5 +28,5 @@ const server = http.createServer(app);
 
 const PORT = 8081;
 server.listen(PORT, () => {
-  console.log("Server started. GraphiQL at http://localhost:8081/graphql");
+  console.log("Server started. GraphiQL at http://localhost:8081/");
 });
