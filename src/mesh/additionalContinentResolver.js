@@ -7,8 +7,8 @@ const resolvers = {
   },
 };
 
-// The following will give partial information about the ContinentsAPI source but not the actual
-// context with the express `req` object
+// The following will give partial information about the ContinentsAPI source
+//  but not the actual context with the express `req` object
 
 // const resolvers = {
 //   Continent: {

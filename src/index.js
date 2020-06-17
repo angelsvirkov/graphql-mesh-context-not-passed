@@ -15,7 +15,7 @@ const getConfig = async () => {
 
 getConfig().then(({ schema, contextBuilder }) => {
   app.use(
-    "/graphql",
+    "/",
     graphqlHTTP(async req => ({
       schema,
       context: await contextBuilder(req),
