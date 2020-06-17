@@ -1,0 +1,15 @@
+transforms:
+  - resolversComposition:
+      - resolver: Query.continents
+        composer: ./src/mesh/continentsMiddleware
+sources:
+  - name: CountriesAPI
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com/
+additionalTypeDefs: |
+  extend type Continent {
+    testProperty: String!
+  }
+additionalResolvers:
+  - ./src/mesh/additionalContinentResolver
